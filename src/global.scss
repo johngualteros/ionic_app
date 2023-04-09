@@ -24,3 +24,67 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+// change the background color of the header content and toolbar
+ion-content, ion-header, ion-toolbar {
+  --background: #0f221e;
+  --box-shadow: none !important;
+}
+
+// change the background color of the header
+.header-md::after {
+  background: #0f221e;
+}
+
+// change the styles of text in ion-title
+ion-title {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+ion-icon {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ion-tab-bar {
+  --background:#0f221e;
+}
+
+ion-label {
+  font-size: .9rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+    background-color: #00d687;
+    color: #000;
+  }
+}
+.active{
+  background-color: #00d687;
+  color: #000;
+}
+// --background:#00d687;
+
+// background ion-card
+ion-card {
+  --background: #263b38;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+ion-card-content{
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}

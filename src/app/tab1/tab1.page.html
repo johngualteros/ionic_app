@@ -1,17 +1,64 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title>Portfolio</ion-title>
+    <ion-icon name="notifications-outline" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Your balance</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <span class="win">$ 0.00</span><br />
+      <span class="total"> ⬆️ 0.00% </span>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      <div class="container">
+        <ngx-charts-line-chart
+          [results]="data"
+          [xAxis]="true"
+          [scheme]="colorScheme"
+          [showGridLines]="false"
+        >
+        </ngx-charts-line-chart>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-title>Stocks</ion-title>
+
+  <ion-card>
+    <ion-card-content>
+      <!-- list -->
+      <div class="list">
+        <div class="title">
+          <div class="line lose"></div>
+          <div>
+            <h2>AAPL</h2>
+            <p>Apple Inc</p>
+          </div>
+        </div>
+        <div class="average">
+          <p>158.82</p>
+          <p class="tag lose">- 0.97</p>
+        </div>
+      </div>
+      <!-- list -->
+      <div class="list">
+        <div class="title">
+          <div class="line win"></div>
+          <div>
+            <h2>GOOG</h2>
+            <p>Alphabet Inc</p>
+          </div>
+        </div>
+        <div class="average">
+          <p>2.584.97</p>
+          <p class="tag win">+ 0.16</p>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

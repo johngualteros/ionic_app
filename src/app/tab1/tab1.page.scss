@@ -1,0 +1,86 @@
+.win{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.total{
+    color: #00d687;
+    font-size: .9rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-height: 250px;
+    padding: 0;
+    margin: 0;
+    color: #fff !important;
+    ngx-charts-line-chart {
+      color: #fff !important;
+    }
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 5px 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    .title {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .line {
+            width: 2px;
+            height: 100%;
+            min-height: 60px;
+            display: block;
+        }
+        .win{
+            background-color: #00d687;
+        }
+        .lose{
+            background-color: #ec4a4a;
+        }
+    }
+      p{
+        font-size: .8rem;
+        color: #adadad;
+      }
+    .average {
+      .tag {
+        text-align: center;
+        border-radius: 10px;
+        color: #000;
+        font-size: .7rem;
+        font-weight: bold;
+      }
+      .win{
+        background: #00d687;
+      }
+      .lose{
+        background: #ec4a4a;
+      }
+    }
+}
+
